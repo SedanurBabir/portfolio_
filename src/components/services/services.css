@@ -1,131 +1,137 @@
-.services{
-    height: 100%;
-    overflow: hidden;
-    display: flex;
-}
-.sSection{
-   width: 50%; 
-   height: 100%;
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
+.experience {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(32px, 6vw, 48px);
 }
 
-.sTitle {
-    font-size:88px;
-    margin-bottom: 24px;
-}
-.serviceList{
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-}
-.service{
-    width: 50%;
-    padding: 30px;
-    border-radius: 20px;
-    background-color: #2f213f;
-    display: flex;
-    align-items: center;
-    gap: 16px;
-    cursor: pointer;
+.experience__intro span {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.24em;
+  color: var(--color-text-muted);
 }
 
-.serviceIcon{
-    width: 48px;
-    height: 48px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.experience__intro h2 {
+  margin-top: 12px;
+  font-size: clamp(2.2rem, 4.6vw, 3rem);
+  max-width: 620px;
+  line-height: 1.3;
+  color: var(--color-text);
 }
 
-.serviceIcon img{
-    width: 24px;
-    height: 24px;
+.experience__timeline {
+  position: relative;
+  display: grid;
+  gap: clamp(20px, 3vw, 24px);
 }
 
-.serviceInfo h2{
-    font-size: 18px;
-    font-weight: 500;
-    margin-bottom: 8px;
+.experience__timeline::before {
+  content: "";
+  position: absolute;
+  left: 10px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(180deg, rgba(56, 189, 248, 0.35), rgba(56, 189, 248, 0));
 }
 
-.serviceInfo h3{
-    font-size: 13px;
-    font-weight: 300;
+.experience__item {
+  position: relative;
+  padding: clamp(20px, 3vw, 26px) clamp(20px, 3vw, 26px) clamp(20px, 3vw, 26px) clamp(32px, 4vw, 40px);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-surface-strong);
+  background: var(--color-surface);
+  box-shadow: var(--shadow-md);
+  display: grid;
+  gap: 12px;
 }
 
-.service:nth-child(1) .serviceIcon{
-    background-color: #f7d2c4;
+.experience__item::before {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: clamp(20px, 3vw, 26px);
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: linear-gradient(120deg, var(--color-accent), var(--color-accent-strong));
+  box-shadow: 0 0 0 4px rgba(14, 165, 233, 0.18);
 }
 
-.service:nth-child(2) .serviceIcon{
-    background-color: #d65f34;
+.experience__meta {
+  display: grid;
+  gap: 6px;
 }
 
-.service:nth-child(3) .serviceIcon{
-    background-color: #9d1493;
-}
-.counterList{
-     display: flex;
-     width: 50%;
-     align-items: center;
-     justify-content: space-between;
-     margin-top: 24px;
-}
-.counter{
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-}
-.counter h1{
-    font-size: 48px;
-    color:#dd4c62
-}
-.counter p{
-    font-size: 15px;
+.experience__period {
+  font-size: 0.8rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(125, 211, 252, 0.85);
 }
 
-@media (max-width: 1536px) {
-  .service,
-  .counterList {
-    width: 60%;
+.experience__role {
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.experience__description {
+  color: var(--color-text-muted);
+  line-height: 1.7;
+}
+
+.experience__education {
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-surface-strong);
+  background: var(--color-surface);
+  padding: clamp(24px, 3vw, 30px);
+  display: grid;
+  gap: 16px;
+}
+
+.experience__education h3 {
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  font-size: 0.95rem;
+  color: var(--color-text);
+}
+
+.experience__education ul {
+  display: grid;
+  gap: 12px;
+  list-style: none;
+}
+
+.experience__education li {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.experience__education li span {
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.experience__education li p {
+  color: var(--color-text-muted);
+}
+
+.experience__education li time {
+  color: rgba(125, 211, 252, 0.85);
+  font-size: 0.85rem;
+}
+
+@media (max-width: 640px) {
+  .experience__timeline::before {
+    left: 6px;
   }
-}
 
-@media (max-width: 1280px) {
-  .sTitle {
-    font-size: 128px;
+  .experience__item::before {
+    left: 0;
   }
 
-  .service {
-    width: 100%;
-  }
-}
-
-@media (max-width: 1024px) {
-  .sTitle {
-    font-size: 48px;
-  }
-
-  .service,
-  .counterList {
-    width: 100%;
-  }
-}
-
-@media (max-width: 768px) {
-  .services {
-    align-items: center;
-    justify-content: center;
-  }
-
-  .sSection {
-    width: 100%;
-  }
-
-  .sSection.right {
-    display: none;
+  .experience__item {
+    padding-left: clamp(28px, 4vw, 36px);
   }
 }

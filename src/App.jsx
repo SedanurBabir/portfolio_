@@ -1,57 +1,92 @@
-// import Home from './components/home/Home';
-// import Services from './components/services/Services';
-// import Portfolio from './components/portfolio/Portfolio';
-// import Contact from './components/contact/Contact';
-// import Test3d from './components/Test3d';
+import { useCallback, useEffect, useRef, useState } from "react";
+import Sidebar, { NAV_ITEMS } from "./components/layout/Sidebar";
+import Intro from "./components/home/Home";
+import Experience from "./components/services/Experience";
+import Projects from "./components/portfolio/Portfolio";
+import Skills from "./components/skills/Skills";
+import Contact from "./components/contact/Contact";
 
-import { lazy, Suspense } from "react";
-import LazyLoad from 'react-lazyload';
+const sectionIds = ["intro", "experience", "projects", "skills", "contact"];
 
 const App = () => {
-  const Home = lazy(() => import('./components/home/Home'));
-  const Services = lazy(() => import("./components/services/Services"));
-  const Portfolio = lazy(() => import("./components/portfolio/Portfolio"));
-  const Contact = lazy(() => import("./components/contact/Contact"));
+  const sectionRefs = useRef({});
+  const [activeSection, setActiveSection] = useState("intro");
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setActiveSection(entry.target.id);
+          }
+        });
+      },
+      { threshold: 0.35 }
+    );
+
+    sectionIds.forEach((id) => {
+      const element = sectionRefs.current[id];
+      if (element) {
+        observer.observe(element);
+      }
+    });
+
+    return () => observer.disconnect();
+  }, []);
+
+  const scrollToSection = useCallback((id) => {
+    setActiveSection(id);
+    const element = sectionRefs.current[id];
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  }, []);
 
   return (
-    <div className='app_container'>
-      <Suspense fallback={'Loading...'}>
-        <LazyLoad height={'100vh'} offset={-100}>
-          <section id='#home'>
-            <Home />
-          </section>
-        </LazyLoad>
-      </Suspense>
+    <div className="app_shell">
+      <Sidebar activeSection={activeSection} onNavigate={scrollToSection} />
+      <nav className="mobileNav" aria-label="Bölümler">
+        {NAV_ITEMS.map((item) => {
+          const isActive = activeSection === item.id;
+          return (
+            <button
+              key={item.id}
+              type="button"
+              className={isActive ? "is-active" : ""}
+              onClick={() => scrollToSection(item.id)}
+              aria-current={isActive ? "page" : undefined}
+            >
+              {item.label}
+            </button>
+          );
+        })}
+      </nav>
+      <main className="app_main">
+        <section id="intro" ref={(el) => (sectionRefs.current.intro = el)}>
+          <Intro onContact={() => scrollToSection("contact")} />
+        </section>
 
-      <Suspense fallback={'Loading...'}>
-        <LazyLoad height={'100vh'} offset={-100}>
-          <section id='#services'>
-            <Services />
-          </section>
-        </LazyLoad>
-      </Suspense>
+        <section
+          id="experience"
+          ref={(el) => (sectionRefs.current.experience = el)}
+        >
+          <Experience />
+        </section>
 
-      <Suspense fallback={'Loading...'}>
-        <LazyLoad height={'600vh'} offset={-100}>
-         {/* <section id='#portfolio'> */}
-           <Portfolio />
-          {/* </section> */}
-        </LazyLoad>
-      </Suspense>
+        <section id="projects" ref={(el) => (sectionRefs.current.projects = el)}>
+          <Projects onContact={() => scrollToSection("contact")} />
+        </section>
 
-      <Suspense fallback={'Loading...'}>
-        <LazyLoad height={'100vh'} offset={-100}>
-          <section id='#contact'>
-            <Contact />
-          </section>
-        </LazyLoad>
-      </Suspense>
+        <section id="skills" ref={(el) => (sectionRefs.current.skills = el)}>
+          <Skills />
+        </section>
 
-      {/* <section>
-        <Test3d/>
-     </section> */}
+        <section id="contact" ref={(el) => (sectionRefs.current.contact = el)}>
+          <Contact />
+        </section>
+      </main>
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;

@@ -1,189 +1,86 @@
-import { useEffect, useRef, useState } from "react";
+import { motion } from "motion/react";
+import { projects, showcaseSites } from "../../data/content";
 import "./portfolio.css";
-import { motion, useInView, useScroll, useTransform } from "motion/react";
 
-const items = [
-  {
-    id: 1,
-    img: "/p1.jpg",
-    title: "Full Stack Blog Application",
-    desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure laboriosam tempore consectetur, atque maiores culpa quia, repellat id, dicta esse fugit neque voluptatem provident itaque voluptates minima. Repudiandae, provident hic.",
-    link: "/",
-  },
-  {
-    id: 2,
-    img: "/p2.jpg",
-    title: "School Management System",
-    desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure laboriosam tempore consectetur, atque maiores culpa quia, repellat id, dicta esse fugit neque voluptatem provident itaque voluptates minima. Repudiandae, provident hic.",
-    link: "/",
-  },
-  {
-    id: 3,
-    img: "/p3.jpg",
-    title: "Real-time Chat Application",
-    desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure laboriosam tempore consectetur, atque maiores culpa quia, repellat id, dicta esse fugit neque voluptatem provident itaque voluptates minima. Repudiandae, provident hic.",
-    link: "/",
-  },
-  {
-    id: 4,
-    img: "/p4.jpg",
-    title: "Social Media Project",
-    desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure laboriosam tempore consectetur, atque maiores culpa quia, repellat id, dicta esse fugit neque voluptatem provident itaque voluptates minima. Repudiandae, provident hic.",
-    link: "/",
-  },
-  {
-    id: 5,
-    img: "/p5.jpg",
-    title: "Animated Portfolio Website",
-    desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure laboriosam tempore consectetur, atque maiores culpa quia, repellat id, dicta esse fugit neque voluptatem provident itaque voluptates minima. Repudiandae, provident hic.",
-    link: "/",
-  },
-];
-
-const imgVariants = {
-  initial: {
-    x: -500,
-    y: 500,
-    opacity: 0,
-  },
-  animate: {
-    x: 0,
-    y: 0,
-    opacity: 1,
-    transition: {
-      duration: 0.5,
-      ease: "easeInOut",
-    },
-  },
-};
-
-const textVariants = {
-  initial: {
-    x: 500,
-    y: 500,
-    opacity: 0,
-  },
-  animate: {
-    x: 0,
-    y: 0,
-    opacity: 1,
-    transition: {
-      duration: 0.5,
-      ease: "easeInOut",
-      staggerChildren: 0.05,
-    },
-  },
-};
-
-const ListItem = ({ item }) => {
-  const ref = useRef();
-
-  const isInView = useInView(ref, { margin: "-100px" });
-
+const Projects = ({ onContact }) => {
   return (
-    <div className="pItem" ref={ref}>
+    <div className="projects">
       <motion.div
-        variants={imgVariants}
-        animate={isInView ? "animate" : "initial"}
-        className="pImg"
+        className="projects__intro"
+        initial={{ opacity: 0, y: 24 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
       >
-        <img src={item.img} alt="" />
+        <span>Öne çıkan işler</span>
+        <h2>El işçiliği, hareket ve mühendisliği birleştiren seçili projeler.</h2>
       </motion.div>
-      <motion.div
-        variants={textVariants}
-        animate={isInView ? "animate" : "initial"}
-        className="pText"
-      >
-        <motion.h1 variants={textVariants}>{item.title}</motion.h1>
-        <motion.p variants={textVariants}>{item.desc}</motion.p>
-        <motion.a variants={textVariants} href={item.link}>
-          <button>View Project</button>
-        </motion.a>
-      </motion.div>
-    </div>
-  );
-};
 
-const Portfolio = () => {
-  const [containerDistance, setContainerDistance] = useState(0);
-  const ref = useRef(null);
+      <div className="projects__list">
+        {projects.map((project) => (
+          <motion.article
+            key={project.id}
+            className="projectCard"
+            initial={{ opacity: 0, y: 24 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+          >
+            <div className="projectCard__header">
+              <span className="projectCard__index">
+                {project.id.toString().padStart(2, "0")}
+              </span>
+              <h3>{project.title}</h3>
+              <p>{project.subtitle}</p>
+            </div>
+            <p className="projectCard__description">{project.desc}</p>
 
-  // useEffect(() => {
-  //   if (ref.current) {
-  //     const rect = ref.current.getBoundingClientRect();
-  //     setContainerDistance(rect.left);
-  //   }
-  // }, []);
+            {project.images && project.images.length > 0 && (
+              <div className="projectCard__gallery">
+                {project.images.map((src, idx) => (
+                  <figure key={src} className="projectCard__shot">
+                    <img src={src} alt={`${project.title} ekran görüntüsü ${idx + 1}`} />
+                  </figure>
+                ))}
+              </div>
+            )}
 
-  // FIX: Re-calculate when screen size changes
-  useEffect(() => {
-    const calculateDistance = () => {
-      if (ref.current) {
-        const rect = ref.current.getBoundingClientRect();
-        setContainerDistance(rect.left);
-      }
-    };
-
-    calculateDistance();
-
-    window.addEventListener("resize", calculateDistance);
-
-    return () => {
-      window.removeEventListener("resize", calculateDistance);
-    };
-  }, []);
-
-  const { scrollYProgress } = useScroll({ target: ref });
-
-  const xTranslate = useTransform(
-    scrollYProgress,
-    [0, 1],
-    [0, -window.innerWidth * items.length]
-  );
-
-  return (
-    <div className="portfolio" ref={ref}>
-      <motion.div className="pList" style={{ x: xTranslate }}>
-        <div
-          className="empty"
-          style={{
-            width: window.innerWidth - containerDistance,
-            // backgroundColor: "pink",
-          }}
-        />
-        {items.map((item) => (
-          <ListItem item={item} key={item.id} />
+            <ul className="projectCard__highlights">
+              {project.highlights.map((item) => (
+                <li key={item}>{item}</li>
+              ))}
+            </ul>
+            <div className="projectCard__meta">
+              <div className="projectCard__stack">
+                {project.tech.map((tech) => (
+                  <span key={tech}>{tech}</span>
+                ))}
+              </div>
+            </div>
+          </motion.article>
         ))}
-      </motion.div>
-      <section />
-      <section />
-      <section />
-      <section />
-      <section />
-      <div className="pProgress">
-        <svg width="100%" height="100%" viewBox="0 0 160 160">
-          <circle
-            cx="80"
-            cy="80"
-            r="70"
-            fill="none"
-            stroke="#ddd"
-            strokeWidth={20}
-          />
-          <motion.circle
-            cx="80"
-            cy="80"
-            r="70"
-            fill="none"
-            stroke="#dd4c62"
-            strokeWidth={20}
-            style={{ pathLength: scrollYProgress }}
-            transform="rotate(-90 80 80)"
-          />
-        </svg>
       </div>
+
+      {showcaseSites.length > 0 && (
+        <motion.div
+          className="projects__showcase"
+          initial={{ opacity: 0, y: 24 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+        >
+          <h3>WordPress Tanıtım Siteleri</h3>
+          <ul>
+            {showcaseSites.map((site) => (
+              <li key={site.url}>
+                <a href={site.url} target="_blank" rel="noreferrer">
+                  <img src="/wordpress.png" alt="WordPress" />
+                  <span>{site.name}</span>
+                </a>
+              </li>
+            ))}
+          </ul>
+        </motion.div>
+      )}
     </div>
   );
 };
 
-export default Portfolio;
+export default Projects;
