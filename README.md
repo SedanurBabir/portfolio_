@@ -5,7 +5,7 @@
 <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&pause=1000&color=2F81F7&center=true&vCenter=true&random=false&width=600&lines=Frontend+Developer;React+Specialist;3.5%2B+Years+Experience;Open+to+New+Opportunities" alt="Typing SVG" />
 
 [![Portfolio](https://img.shields.io/badge/Portfolio-sedababir.com.tr-success?style=for-the-badge)](https://sedababir.com.tr)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/sedanur-babir)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/seda-babir/)
 [![Email](https://img.shields.io/badge/Email-Contact-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:sedababir1@gmail.com)
 
 </div>
@@ -15,7 +15,7 @@
 ## 💼 About Me
 ```typescript
 const sedanur = {
-  location: "Istanbul, Turkey",
+  location: "Ankara, Turkey",
   role: "Frontend Developer",
   experience: "3.5+ years",
   currentFocus: "Building scalable web applications with React",
@@ -270,7 +270,7 @@ const sedanur = {
 <div align="center">
 
 [![Portfolio](https://img.shields.io/badge/Portfolio-sedababir.com.tr-FF5722?style=for-the-badge&logo=google-chrome&logoColor=white)](https://sedababir.com.tr)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Sedanur_Babir-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/sedanur-babir)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Sedanur_Babir-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/seda-babir/)
 [![Email](https://img.shields.io/badge/Email-sedababir1@gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:sedababir1@gmail.com)
 [![GitHub](https://img.shields.io/badge/GitHub-SedanurBabir-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/SedanurBabir)
 
