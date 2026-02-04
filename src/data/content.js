@@ -1,8 +1,8 @@
 export const profile = {
   name: "Sedanur Babir",
-  title: "Front-end Developer",
-  description: "3+ yıl deneyimli Front-End Developer olarak React, React Native, Angular ve Ionic ile kullanıcı dostu ve performans odaklı arayüzler geliştiriyorum. Modern web ve mobil teknolojileriyle ölçeklenebilir projeler oluşturuyorum.",
-  location: "Mamak / Ankara",
+  title: "Frontend Developer",
+  description: "3.5+ yıl deneyimli Frontend Developer olarak React, React Native, Angular ve Ionic ile kullanıcı dostu ve performans odaklı arayüzler geliştiriyorum. Modern web ve mobil teknolojileriyle ölçeklenebilir projeler oluşturuyorum.",
+  location: "Ankara, Turkey",
   email: "sedababir1@gmail.com",
   phone: "0 (541) 567 87 76",
   socials: [
@@ -13,17 +13,17 @@ export const profile = {
 
 export const focusAreas = [
   {
-    title: "Ürün geliştirme",
+    title: "Ürün Geliştirme",
     description:
       "Öğrenci platformlarından kurumsal dashboardlara kadar karmaşık ihtiyaçları sade ve tutarlı arayüzlere dönüştürüyorum.",
   },
   {
-    title: "Etkileşim & motion",
+    title: "Etkileşim & Motion",
     description:
       "Kullanıcı yolculuğunu güçlendiren mikro animasyonlar, yönlendirmeler ve erişilebilir hareket sistemleri tasarlıyorum.",
   },
   {
-    title: "Takım çalışması",
+    title: "Takım Çalışması",
     description:
       "Ürün, tasarım ve backend ekipleriyle yakın çalışarak süreçleri hızlandıran bileşen kütüphaneleri ve dokümantasyon üretiyorum.",
   },
@@ -32,17 +32,17 @@ export const focusAreas = [
 export const experiences = [
   {
     company: "SarSistem Yazılım",
-    role: "Front-end Developer",
+    role: "Frontend Developer",
     period: "2023 - Devam ediyor",
     description:
       "React, Next.js, Redux ve React Native ile web ve mobil uygulamalar geliştiriyorum. Gerçek zamanlı API entegrasyonları, state management ve responsive tasarım konularında ürün ekibiyle birlikte çalışıyorum.",
   },
   {
     company: "İdea Teknoloji",
-    role: "Front-end Developer",
+    role: "Frontend Developer",
     period: "2022 - 2023",
     description:
-      "Angular ve NgRx ile ölçeklenebilir kurumsal çözümler geliştirildi. Ionic Framework ile mobil uygulama yayınladım; JWT tabanlı kimlik doğrulama ve rol bazlı yetkilendirme süreçlerini koordine ettim.",
+      "Angular ve NgRx ile ölçeklenebilir kurumsal çözümler geliştirdim. Ionic Framework ile mobil uygulama yayınladım; JWT tabanlı kimlik doğrulama ve rol bazlı yetkilendirme süreçlerini koordine ettim.",
   },
   {
     company: "Netcad Yazılım A.Ş.",
@@ -79,86 +79,104 @@ export const skills = {
   "UI Kütüphaneleri": ["Material UI", "Ant Design", "Bootstrap", "Chakra UI"],
   "Backend Entegrasyonu": ["RESTful API", "Axios", "Fetch API"],
   Görselleştirme: ["Chart.js", "ApexCharts", "Highcharts"],
-  "Araçlar & Diğer": ["Git", "GitHub", "GitLab", "Jira", "Firebase", "WordPress", "Figma", "ESLint", "Prettier", "i18n"],
+  "Araçlar & Diğer": ["Git", "GitHub", "GitLab", "Jira", "Firebase", "WordPress", "Figma", "ESLint", "Prettier", "i18n", "Socket.IO"],
+};
+
+export const professionalWorkDisclaimer = {
+  title: "📋 Profesyonel Projeler Hakkında",
+  message: "Gizlilik anlaşmaları (NDA) nedeniyle, SarSistem Yazılım, İdea Teknoloji ve Netcad Yazılım'daki profesyonel projelerim hakkında detaylı bilgi halka açık olarak paylaşılamaz. Aşağıdaki projeler, üzerinde çalıştığım uygulama türlerini temsil eder ve genelleştirilmiş açıklamalar içerir.",
+  icon: "🔒",
 };
 
 export const projects = [
   {
     id: 1,
-    title: "SincApp Sınav Hazırlık Sistemi",
+    title: "Eğitim ve Sınav Hazırlık Platformu",
     category: "Web Uygulaması",
-    role: "Front-end Developer",
+    role: "Frontend Developer",
     duration: "2023 - Devam ediyor",
     description:
-      "React / Next.js ve MUI ile geliştirilen, öğrencilere kişiselleştirilmiş sınav hazırlık planları sunan platform. Diagnostik sınav sonuçlarına göre çalışma planları ve tercih listeleri üretiyor.",
+      "React / Next.js ve Material-UI ile geliştirilen, öğrencilere kişiselleştirilmiş öğrenme deneyimi sunan kapsamlı eğitim platformu. Diagnostik değerlendirmeler, çalışma planları ve interaktif içerik yönetimi içerir.",
     highlights: [
-      "Tercih robotu ve çalışma planı modüllerinin tasarım ve geliştirilmesi",
-      "Konu kazanımlarına göre sınav soruları görüntüleme",
-      "YouTube benzeri video oynatma ve ders izleme deneyimi",
-      "ApexCharts ile öğrenci performans görselleştirmeleri",
+      "Kişiselleştirilmiş öğrenme yolu ve çalışma planı modülleri",
+      "İnteraktif video oynatıcı ve ders izleme sistemi",
+      "Öğrenci performans analitiği ve veri görselleştirme",
+      "Responsive tasarım ve akıcı animasyonlar",
     ],
-    tech: ["React", "Next.js", "Material UI", "Redux Toolkit", "Axios", "ApexCharts", "ImageMapper"],
-    images: ["/S1.png", "/S2.png", "/S3.png", "/S4.png"],
+    tech: ["React", "Next.js", "Material UI", "Redux Toolkit", "Axios", "ApexCharts"],
+    professional: true,
   },
   {
     id: 2,
-    title: "Bussion Analytics Platform",
+    title: "Kurumsal Analitik Dashboard",
     category: "Kurumsal Platform",
-    role: "Front-end & Mobile Developer",
+    role: "Frontend & Mobile Developer",
     duration: "2022 - 2023",
     description:
-      "Turkcell, Botaş, Turkuaz gibi şirketlere veri analitiği ve danışmanlık sağlayan sistem. Büyük veri setlerini işleyebilen interaktif dashboardlar ve mobil uygulamalar sunuyor.",
+      "Kurumsal müşterilere veri analitiği ve danışmanlık sağlayan sistem. Büyük veri setlerini işleyebilen interaktif dashboardlar ve cross-platform mobil uygulamalar.",
     highlights: [
-      "NgRx ile merkezi state yönetimi",
-      "JWT tabanlı kimlik doğrulama ve rol bazlı yetkilendirme",
-      "ChatGPT API entegrasyonu ile NLP chatbot",
-      "Ionic ile Android ve iOS mobil uygulamalar",
-      "Figma prototiplerini birebir uygulayan responsive arayüzler",
+      "Merkezi state yönetimi ve performans optimizasyonu",
+      "JWT tabanlı güvenli kimlik doğrulama sistemi",
+      "Yapay zeka entegrasyonu ile akıllı veri analizi",
+      "iOS ve Android mobil uygulamalar",
+      "Responsive ve erişilebilir kullanıcı arayüzleri",
     ],
     tech: ["Angular", "NgRx", "RxJS", "Material UI", "SCSS", "Highcharts", "Ionic", "JWT"],
-    images: ["/B1.png", "/B2.png", "/B3.png"],
+    professional: true,
   },
   {
     id: 3,
-    title: "Bano Balık Noktam",
+    title: "Cross-Platform Mobil Uygulama",
     category: "Mobil Uygulama",
-    role: "Front-end & Mobile Developer",
+    role: "Frontend & Mobile Developer",
     duration: "2023 - Devam ediyor",
     description:
-      "Balıkçılar için derinlik haritaları, balık türleri ve hava durumu verileri sunan platform. Rota planlama ve sanal çapa özellikleriyle mobil deneyim sağlar.",
+      "Lokasyon bazlı servisler ve gerçek zamanlı veri sağlayan mobil platform. Harita entegrasyonu, veri görselleştirme ve offline çalışma özellikleriyle kullanıcı deneyimi sunar.",
     highlights: [
-      "React ve MUI ile yönetim paneli",
-      "DataGrid bileşenleriyle veri görselleştirme",
-      "iOS ve Android için cross-platform geliştirme",
-      "Redux ile global state yönetimi",
-      "Mağaza yayınına hazır mobil uygulama",
+      "React ve Material-UI ile web yönetim paneli",
+      "DataGrid bileşenleriyle gelişmiş veri yönetimi",
+      "iOS ve Android için native performans",
+      "Global state yönetimi ve offline destek",
+      "App Store ve Google Play yayınına hazır",
     ],
     tech: ["React Native", "React", "Material UI", "Redux Toolkit", "Xcode", "Android Studio"],
-    images: ["/BA1.png", "/BA2.png", "/BA3.png", "/BA4.png"],
+    professional: true,
   },
   {
     id: 4,
-    title: "E-Karbon",
+    title: "Emlak Yönetim Platformu",
     category: "Web Platformu",
-    role: "Front-end Developer",
+    role: "Frontend Developer",
     duration: "2023 - Devam ediyor",
     description:
-      "Karbondioksit emisyonlarını finansal değere dönüştürerek karbon piyasasında takip eden platform. WordPress tanıtım sitesi ve React/Next.js kullanıcı portalı içeriyor.",
+      "Emlak yönetimi ve kullanıcı portalı sunan kapsamlı web platformu. Kurumsal tanıtım sitesi ve interaktif kullanıcı paneli içerir.",
     highlights: [
-      "WordPress ile kurumsal tanıtım sitesi",
-      "React ve Next.js ile kullanıcı yönetimi",
-      "Chart.js ile dashboard ve veri görselleştirmeleri",
-      "Driver.js ile animasyonlu kullanıcı rehberi",
-      "DataGrid ile dinamik veri tabloları",
+      "Modern ve performanslı kurumsal web sitesi",
+      "React ve Next.js ile kullanıcı yönetim sistemi",
+      "İnteraktif veri görselleştirme ve dashboardlar",
+      "Animasyonlu kullanıcı rehberi ve onboarding",
+      "Responsive ve mobile-first tasarım",
     ],
-    tech: ["React", "Next.js", "WordPress", "Axios", "Redux", "Chart.js", "Driver.js"],
-    images: ["/E1.png", "/E2.png", "/E3.png", "/E4.png"],
+    tech: ["React", "Next.js", "WordPress", "Axios", "Redux", "Chart.js"],
+    professional: true,
   },
-];
-
-export const showcaseSites = [
-  { name: "DijiMülk", url: "https://www.dijimulk.com" },
-  { name: "LentoDent", url: "https://lentodent.com" },
-  { name: "Balık Noktam", url: "https://baliknoktam.com" },
-  { name: "E-Karbon", url: "https://e-karbon.com" },
+  {
+    id: 5,
+    title: "Kişisel Portfolio Web Sitesi",
+    category: "Web Uygulaması",
+    role: "Frontend Developer",
+    duration: "2024",
+    description:
+      "Modern ve responsive kişisel portfolio web sitesi. Projelerimi, yeteneklerimi ve profesyonel deneyimimi sergileyen, kullanıcı dostu arayüze sahip platform.",
+    highlights: [
+      "Temiz ve modern UI/UX tasarımı",
+      "Akıcı animasyonlar ve geçişler",
+      "SEO optimizasyonu ve hızlı yükleme",
+      "Tam responsive tasarım",
+    ],
+    tech: ["React", "Vite", "CSS3"],
+    professional: false,
+    github: "https://github.com/SedanurBabir/portfolio_",
+    live: "https://sedababir.com.tr",
+  },
 ];

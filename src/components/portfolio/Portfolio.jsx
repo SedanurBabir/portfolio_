@@ -1,5 +1,5 @@
 import { motion } from "motion/react";
-import { projects, showcaseSites } from "../../data/content";
+import { projects } from "../../data/content";
 import "./portfolio.css";
 
 const Projects = ({ onContact }) => {
@@ -32,17 +32,6 @@ const Projects = ({ onContact }) => {
               <p>{project.subtitle}</p>
             </div>
             <p className="projectCard__description">{project.desc}</p>
-
-            {project.images && project.images.length > 0 && (
-              <div className="projectCard__gallery">
-                {project.images.map((src, idx) => (
-                  <figure key={src} className="projectCard__shot">
-                    <img src={src} alt={`${project.title} ekran görüntüsü ${idx + 1}`} />
-                  </figure>
-                ))}
-              </div>
-            )}
-
             <ul className="projectCard__highlights">
               {project.highlights.map((item) => (
                 <li key={item}>{item}</li>
@@ -58,27 +47,6 @@ const Projects = ({ onContact }) => {
           </motion.article>
         ))}
       </div>
-
-      {showcaseSites.length > 0 && (
-        <motion.div
-          className="projects__showcase"
-          initial={{ opacity: 0, y: 24 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-        >
-          <h3>WordPress Tanıtım Siteleri</h3>
-          <ul>
-            {showcaseSites.map((site) => (
-              <li key={site.url}>
-                <a href={site.url} target="_blank" rel="noreferrer">
-                  <img src="/wordpress.png" alt="WordPress" />
-                  <span>{site.name}</span>
-                </a>
-              </li>
-            ))}
-          </ul>
-        </motion.div>
-      )}
     </div>
   );
 };
