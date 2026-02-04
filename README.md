@@ -2,10 +2,10 @@
 
 # 👋 Hi, I'm Sedanur Babir
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&pause=1000&color=2F81F7&center=true&vCenter=true&random=false&width=600&lines=Frontend+Developer+%7C+React+Specialist;3.5%2B+Years+of+Experience;Building+Scalable+Web+Applications;Open+to+New+Opportunities" alt="Typing SVG" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&pause=1000&color=2F81F7&center=true&vCenter=true&random=false&width=600&lines=Frontend+Developer;React+Specialist;3.5%2B+Years+Experience;Open+to+New+Opportunities" alt="Typing SVG" />
 
-[![Portfolio](https://img.shields.io/badge/🌐_Portfolio-sedababir.com.tr-success?style=for-the-badge)](https://sedababir.com.tr)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/seda-babir/)
+[![Portfolio](https://img.shields.io/badge/Portfolio-sedababir.com.tr-success?style=for-the-badge)](https://sedababir.com.tr)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/sedanur-babir)
 [![Email](https://img.shields.io/badge/Email-Contact-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:sedababir1@gmail.com)
 
 </div>
@@ -15,20 +15,20 @@
 ## 💼 About Me
 ```typescript
 const sedanur = {
-  location: "Ankara, Turkey 🇹🇷",
+  location: "Istanbul, Turkey",
   role: "Frontend Developer",
   experience: "3.5+ years",
-  currentFocus: "Building scalable, user-centric web applications",
+  currentFocus: "Building scalable web applications with React",
   openTo: ["Full-time opportunities", "Freelance projects", "Collaborations"],
   
   expertise: [
     "React & Next.js Applications",
-    "Complex State Management (Redux, NgRx)",
-    "Data Visualization & Interactive Dashboards",
-    "Responsive & Mobile-First Design",
+    "State Management (Redux, NgRx)",
+    "Data Visualization & Dashboards",
+    "Responsive Design",
     "RESTful API Integration",
-    "Real-time Features & WebSocket",
-    "Microservices Architecture Integration"
+    "Real-time Features",
+    "Microservices Architecture"
   ]
 };
 ```
@@ -71,19 +71,19 @@ const sedanur = {
 <table align="center">
   <tr>
     <td align="center" width="200">
-      <b>⚛️ React Ecosystem</b><br/>
+      <b>React Ecosystem</b><br/><br/>
       React 18, Next.js 15<br/>
       React Hooks, Context API<br/>
-      React Native (Cross-platform)
+      React Native
     </td>
     <td align="center" width="200">
-      <b>🗃️ State Management</b><br/>
+      <b>State Management</b><br/><br/>
       Redux Toolkit<br/>
       NgRx (Angular)<br/>
       Vuex (Vue.js)
     </td>
     <td align="center" width="200">
-      <b>📊 Data Visualization</b><br/>
+      <b>Data Visualization</b><br/><br/>
       ApexChart, Chart.js<br/>
       Highcharts, Recharts<br/>
       Mapbox GL, Deck.gl
@@ -91,19 +91,19 @@ const sedanur = {
   </tr>
   <tr>
     <td align="center" width="200">
-      <b>🎨 UI/UX Libraries</b><br/>
+      <b>UI/UX Libraries</b><br/><br/>
       Material-UI<br/>
       Ant Design<br/>
       Chakra UI, Bootstrap
     </td>
     <td align="center" width="200">
-      <b>💅 Styling</b><br/>
+      <b>Styling</b><br/><br/>
       CSS3, SCSS<br/>
       Styled Components<br/>
       Tailwind CSS
     </td>
     <td align="center" width="200">
-      <b>🔧 Development Tools</b><br/>
+      <b>Development Tools</b><br/><br/>
       TypeScript, ES6+<br/>
       Git, GitHub, GitLab<br/>
       ESLint, Prettier, i18n
@@ -115,55 +115,55 @@ const sedanur = {
 
 ## 💼 Professional Experience
 
-### 🏢 **SarSistem Yazılım** · Frontend Developer
+### 🏢 **SarSistem Yazilim** - Frontend Developer
 *March 2023 - Present | Istanbul, Turkey*
 
-**Responsibilities:**
-- Developing and maintaining enterprise-level web and mobile applications using React, Next.js, and React Native
-- Implementing complex state management solutions with Redux Toolkit
+**Key Responsibilities:**
+- Developing enterprise-level web and mobile applications using React, Next.js, and React Native
+- Implementing complex state management with Redux Toolkit
 - Building interactive data visualizations and analytics dashboards
-- Creating responsive, mobile-first user interfaces with Material-UI
-- Integrating RESTful APIs and real-time features with Socket.IO
-- Collaborating with cross-functional teams in Agile environment
+- Creating responsive, mobile-first interfaces with Material-UI
+- Integrating RESTful APIs and real-time features using Socket.IO
+- Collaborating in Agile teams on microservices architecture projects
 
-**Key Projects:**
-- **Enterprise Real Estate Management Platform**: Built microservices-based property management system with Next.js 15, Redux Toolkit, and interactive mapping solutions (Mapbox GL, Deck.gl). Implemented real-time notifications and multi-language support.
+**Notable Projects:**
+- **Enterprise Real Estate Management Platform**: Microservices-based property management system with Next.js 15, Redux Toolkit, interactive maps (Mapbox GL, Deck.gl), real-time notifications, and multi-language support.
   
-- **Education & Exam Preparation Platform**: Developed comprehensive e-learning system with React and Next.js, featuring student analytics dashboards, study planners, and data visualization components.
+- **Education & Exam Preparation Platform**: E-learning system with React and Next.js featuring student analytics dashboards, study planners, and data visualization components.
 
-- **User Management System**: Created admin panel with React and Next.js, implementing DataGrid components, Chart.js dashboards, and animated UI components.
+- **User Management System**: Admin panel with React and Next.js, DataGrid components, Chart.js dashboards, and animated UI elements.
 
-- **Cross-Platform Mobile Application**: Built React Native app for iOS and Android with admin panel using React and Material-UI, focusing on responsive design and state management.
+- **Cross-Platform Mobile App**: React Native application for iOS and Android with web admin panel, Material-UI design system, and comprehensive state management.
 
 **Technologies:** React 18, Next.js 15, React Native, Redux Toolkit, Material-UI, TypeScript, Socket.IO, Mapbox GL, Chart.js, ApexChart, Firebase
 
 ---
 
-### 🏢 **İdea Teknoloji** · Frontend Developer
+### 🏢 **Idea Teknoloji** - Frontend Developer
 *November 2022 - February 2023 | Istanbul, Turkey*
 
-**Responsibilities:**
+**Key Responsibilities:**
 - Developed scalable analytics platforms using Angular and NgRx
 - Built interactive dashboards for large dataset processing
-- Implemented responsive design patterns and performance optimizations
+- Implemented responsive design and performance optimizations
 - Created mobile applications using Ionic Framework
 
-**Key Projects:**
-- **Analytics Dashboard Platform**: Developed enterprise analytics solution with Angular, NgRx, and Highcharts for interactive data visualization and large dataset processing.
+**Notable Projects:**
+- **Analytics Dashboard Platform**: Enterprise analytics solution with Angular, NgRx, and Highcharts for interactive data visualization and large-scale data processing.
 
-- **Corporate Communication Platform**: Built scalable application using Angular with Material-UI, implementing state management and component-based architecture.
+- **Corporate Communication Platform**: Scalable application with Angular, Material-UI, and component-based architecture.
 
 **Technologies:** Angular, NgRx, RxJS, Highcharts, Material-UI, SCSS, Ionic Framework
 
 ---
 
-### 🏢 **Netcad Yazılım A.Ş.** · Intern Software Developer
+### 🏢 **Netcad Yazilim A.S.** - Intern Software Developer
 *June 2022 - September 2022 | Ankara, Turkey*
 
 **Responsibilities:**
 - Frontend development with Vue.js framework
-- State management implementation using Vuex
-- User authentication and application feature development
+- State management using Vuex
+- User authentication and feature development
 - Version control with Git and GitHub
 
 **Technologies:** Vue.js, Vuex, JavaScript, Git, GitHub
@@ -172,32 +172,32 @@ const sedanur = {
 
 ## 🚀 Personal Projects
 
-> **Note:** Due to NDA agreements, my professional work cannot be shared publicly. The projects below demonstrate my technical capabilities through personal and open-source work.
+> Due to NDA agreements, professional work cannot be shared publicly. Projects below demonstrate technical capabilities.
 
 <table>
   <tr>
     <td width="50%">
-      <h3 align="center">🌐 Portfolio Website</h3>
+      <h3 align="center">Portfolio Website</h3>
       <p align="center">
         <a href="https://sedababir.com.tr" target="_blank">
           <img src="https://img.shields.io/badge/Live-sedababir.com.tr-success?style=flat-square" />
         </a>
       </p>
       <p align="center">
-        Modern and responsive personal portfolio showcasing projects, skills, and professional experience.
+        Modern responsive portfolio showcasing projects, skills, and professional experience.
       </p>
       <p align="center">
         <strong>Tech:</strong> React, Vite, CSS3
       </p>
     </td>
     <td width="50%">
-      <h3 align="center">📱 Expo Todo App</h3>
+      <h3 align="center">Expo Todo App</h3>
       <p align="center">
         <img src="https://img.shields.io/badge/React_Native-20232A?style=flat-square&logo=react" />
         <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript" />
       </p>
       <p align="center">
-        Cross-platform task management mobile app with CRUD operations and offline data persistence.
+        Cross-platform task management app with CRUD operations and offline data persistence.
       </p>
       <p align="center">
         <strong>Tech:</strong> React Native, TypeScript, AsyncStorage
@@ -206,28 +206,28 @@ const sedanur = {
   </tr>
   <tr>
     <td width="50%">
-      <h3 align="center">📸 Instagram Clone</h3>
+      <h3 align="center">Instagram Clone</h3>
       <p align="center">
         <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react" />
       </p>
       <p align="center">
-        Social media application with post sharing, likes, comments, and user interactions.
+        Social media app with post sharing, likes, comments, and user interactions.
       </p>
       <p align="center">
-        <strong>Tech:</strong> React, React Hooks, Component-based architecture
+        <strong>Tech:</strong> React, React Hooks
       </p>
     </td>
     <td width="50%">
-      <h3 align="center">🎨 UI/UX Practice Project</h3>
+      <h3 align="center">UI/UX Practice Project</h3>
       <p align="center">
         <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react" />
         <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3" />
       </p>
       <p align="center">
-        Design practice project focusing on modern UI/UX trends, animations, and responsive design.
+        Design practice focusing on modern UI/UX trends, animations, and responsive design.
       </p>
       <p align="center">
-        <strong>Tech:</strong> React, CSS3, Modern animations
+        <strong>Tech:</strong> React, CSS3
       </p>
     </td>
   </tr>
@@ -235,20 +235,17 @@ const sedanur = {
 
 ---
 
-## 📊 GitHub Statistics
+## 📊 GitHub Activity
 
 <div align="center">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=SedanurBabir&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true"/>
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=SedanurBabir&layout=compact&langs_count=8&theme=tokyonight"/>
-</div>
+  
+![](https://github-readme-activity-graph.vercel.app/graph?username=SedanurBabir&theme=react-dark&hide_border=true&area=true)
 
-<div align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=SedanurBabir&theme=tokyonight" alt="GitHub Streak" />
 </div>
 
 ---
 
-## 🎓 Education & Certifications
+## 🎓 Education
 
 - **B.S. in Computer Engineering** - Sivas Cumhuriyet University (2020-2024)
 - **Social Media Management** - Anadolu University (Ongoing)
@@ -256,24 +253,24 @@ const sedanur = {
 
 ---
 
-## 🌟 What I Bring
+## 🌟 What I Offer
 
-- ✅ **3.5+ years** of professional frontend development experience
-- ✅ Strong expertise in **React ecosystem** and modern JavaScript
-- ✅ Proven ability to build **scalable, maintainable** applications
-- ✅ Experience with **enterprise-level projects** and microservices
-- ✅ Skilled in **cross-functional collaboration** and Agile methodologies
-- ✅ Passionate about **clean code**, performance optimization, and UX
-- ✅ Quick learner, adaptable to new technologies and frameworks
+✅ **3.5+ years** of professional frontend development experience  
+✅ Strong expertise in **React ecosystem** and modern JavaScript  
+✅ Proven ability to build **scalable, maintainable** applications  
+✅ Experience with **enterprise-level projects** and microservices  
+✅ Skilled in **cross-functional collaboration** and Agile methodologies  
+✅ Passionate about **clean code**, performance optimization, and user experience  
+✅ Quick learner, adaptable to new technologies and frameworks  
 
 ---
 
-## 📫 Let's Connect!
+## 📫 Contact Me
 
 <div align="center">
 
 [![Portfolio](https://img.shields.io/badge/Portfolio-sedababir.com.tr-FF5722?style=for-the-badge&logo=google-chrome&logoColor=white)](https://sedababir.com.tr)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Sedanur_Babir-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/seda-babir/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Sedanur_Babir-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/sedanur-babir)
 [![Email](https://img.shields.io/badge/Email-sedababir1@gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:sedababir1@gmail.com)
 [![GitHub](https://img.shields.io/badge/GitHub-SedanurBabir-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/SedanurBabir)
 
@@ -287,8 +284,8 @@ const sedanur = {
 
 **Available for:** Frontend Developer roles, React/Next.js projects, Remote opportunities
 
-*"Building the web, one component at a time."*
+*Building the web, one component at a time*
 
-![Profile Views](https://komarev.com/ghpvc/?username=SedanurBabir&color=blueviolet&style=flat-square)
+![Profile Views](https://komarev.com/ghpvc/?username=SedanurBabir&color=blueviolet&style=flat-square&label=Profile+Views)
 
 </div>
